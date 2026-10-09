@@ -1,0 +1,191 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #172c3d;
+  background: #f2f6f8;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  width: min(980px, calc(100% - 32px));
+  margin: 48px auto;
+}
+
+.hero {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #287b77;
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+.intro,
+.identity p,
+.card > p {
+  color: #5c6e7b;
+  line-height: 1.6;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid #dce6e9;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(23 44 61 / 5%);
+}
+
+.identity {
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 360px);
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 0 10px;
+}
+
+.student-form label {
+  grid-column: 1 / -1;
+}
+
+.student-form button {
+  margin-top: 0;
+}
+
+.identity h2,
+.identity p {
+  margin: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin: 26px 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd8dd;
+  border-radius: 9px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 12px;
+  padding: 11px 16px;
+  border: 0;
+  border-radius: 9px;
+  background: #176c68;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #105652;
+}
+
+.result {
+  padding: 16px;
+  border-radius: 10px;
+  background: #eaf5f3;
+  color: #145450;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.subject-result {
+  margin: 12px 0;
+  padding: 15px;
+  border: 1px solid #dce6e9;
+  border-radius: 10px;
+}
+
+.subject-result h3 {
+  margin: 0 0 6px;
+}
+
+.subject-result p {
+  margin: 0;
+  color: #5c6e7b;
+}
+
+.answer {
+  margin-top: 18px;
+  line-height: 1.6;
+}
+
+.source {
+  color: #287b77;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.status {
+  min-height: 1.5em;
+  color: #9a3e32;
+}
+
+footer {
+  margin-top: 28px;
+  color: #71818a;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .page {
+    margin: 24px auto;
+  }
+
+  .identity,
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}

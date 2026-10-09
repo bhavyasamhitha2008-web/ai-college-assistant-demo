@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Temporary focused pytest run",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"pytest",
+				"tests/test_api.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

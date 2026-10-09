@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI College Assistant Demo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">CLASSROOM DEMO · FICTIONAL DATA</p>
+        <h1>AI College Assistant</h1>
+        <p class="intro">Explore sample attendance, courses, and policy answers
+          grounded in fictional handbook documents.</p>
+      </header>
+
+      <section class="card identity" aria-labelledby="identity-title">
+        <div>
+          <h2 id="identity-title">Find attendance</h2>
+          <p>Enter a fictional demo student ID. This is not a login.</p>
+        </div>
+        <form id="student-form" class="student-form">
+          <label for="student-id">Fictional student ID</label>
+          <input id="student-id" name="student-id" required maxlength="80"
+            value="synthetic-student-001" autocomplete="off">
+          <button type="submit">Show attendance</button>
+        </form>
+      </section>
+
+      <div class="columns">
+        <section class="card" aria-labelledby="attendance-title">
+          <h2 id="attendance-title">Attendance</h2>
+          <div id="attendance" aria-live="polite">Enter a fictional student ID to load attendance.</div>
+        </section>
+
+        <section class="card" aria-labelledby="question-title">
+          <h2 id="question-title">Ask the sample handbook</h2>
+          <p>Try “What is the attendance policy?” or “When are the exams?”</p>
+          <form id="question-form">
+            <label for="question">Your question</label>
+            <textarea id="question" name="question" rows="3" maxlength="500"
+              required placeholder="Ask about attendance or late work"></textarea>
+            <button type="submit">Search handbook</button>
+          </form>
+          <div id="answer" class="answer" aria-live="polite"></div>
+        </section>
+      </div>
+
+      <p id="status" class="status" role="status"></p>
+      <footer>For classroom demonstration only. Do not enter personal information.</footer>
+    </main>
+  </body>
+</html>
